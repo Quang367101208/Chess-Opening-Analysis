@@ -49,9 +49,6 @@ Full results: [`white_winrate_sorted.csv`](./white_winrate_sorted.csv), [`black_
 
 MySQL Workbench, SQL (CASE expressions, aggregate functions, GROUP BY/HAVING), Claude AI (Data cleaning, schema design, and all SQL queries were written independently. Final output files were sorted and formatted with Claude's assistance.)
 
-! Second Reference
-The queries are explained in this file: https://docs.google.com/document/d/1FNSdlg1CY0cUO4g3m7-KVtIktGQdBTZDR7c6qhpo2IA/edit?tab=t.0
-
 ! Limitations
 
 - The 2000+ bracket had too few games with any single opening to meet the 20-game sample threshold, so no reliable "top opening" could be determined for that bracket.
