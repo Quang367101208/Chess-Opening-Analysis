@@ -62,15 +62,15 @@ The queries are explained in this file: https://docs.google.com/document/d/1FNSd
 ! Overview
 This part addresses some of the limitations in part A by computing the standard deviation values and running the binomial significance test.
 
-## Standard Deviation
+### Standard Deviation
 For each opening/bracket combination, the sample standard deviation of the score (`won`, valued 1, 0.5, or 0) was computed directly in SQL using `STDDEV_SAMP()`, alongside the existing average, to get a sense of how much individual games vary around that average before testing significance.
 
 **Result:** 
 - Across every opening (White and Black combined), standard deviation values fall between roughly 0.40 and 0.51 — close to the maximum possible spread for a variable that only takes values of 0, 0.5, or 1. This means individual games are close to unpredictable.
 - This high per-game variability is exactly why a small-sample average can't be trusted at face value — a 75% score over 20 games could easily be the product of this underlying randomness rather than a real advantage. This motivates the binomial significance test below, which formally checks whether each opening's *average* score across all its games is still far enough from a 50/50 baseline to be unlikely by chance, despite the noise at the individual-game level.
-- Full results in ## Binomial Test Results section.
+- Full results in Binomial Test Results section.
 
-## Binomial Test
+### Binomial Test
 To test whether each opening's average score is meaningfully different from a 50/50 baseline, a binomial test was run on every opening/bracket row using Python's `scipy.stats.binomtest`. The null hypothesis for each test: the opening has no real advantage (a true win rate of 50%), and any observed deviation is due to random chance given the sample size.
 
 **Setup:**
@@ -98,4 +98,8 @@ Some notable significant results include:
 - **Sicilian Defense: Old Sicilian** and **Sicilian Defense: Bowdler Attack** were significant for Black at 1800-1999 (74.19% and 73.53%, respectively), suggesting these lines perform reliably well for Black players at that level, not just by chance.
 
 Full results, including p-values and significance flags for every opening/bracket combination: 
+
+! Tools:
+MySQL Workbench, SQL (STDDEV_SAMP), Python (PyCharm), scipy (binomtest), Claude AI (Standard deviation computation and binomial significance testing methodology were designed and implemented independently. Claude assisted with result formatting and README documentation.)
+
 
