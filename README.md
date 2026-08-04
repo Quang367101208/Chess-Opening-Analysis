@@ -25,7 +25,7 @@ In this first part, data was downloaded from kaggle, cleansed before having the 
 - Perspective split: Games are analyzed separately for White and Black, since the same opening performs differently depending on which side plays it.
 - Sample size threshold: Openings with fewer than 20 games in a given bracket are excluded, as smaller samples produce unreliable win-rate estimates.
 
-Full SQL pipeline: [`chessanalysisqueries.sql`](./chessanalysisqueries.sql)
+Full SQL pipeline: [`chessanalysisqueriesA.sql`](./chessanalysisqueriesA.sql)
 
 ! Key Findings
 
@@ -101,5 +101,7 @@ Full results, including p-values and significance flags for every opening/bracke
 
 ! Tools:
 MySQL Workbench, SQL (STDDEV_SAMP), Python (PyCharm), scipy (binomtest), Claude AI (Standard deviation computation and binomial significance testing methodology were designed and implemented independently. Claude assisted with result formatting and README documentation.)
+
+Full SQL & Python pipeline: [`chessanalysisqueriesB.sql`](./chessanalysisqueriesB.sql)
 
 
