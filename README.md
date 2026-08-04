@@ -99,6 +99,6 @@ Full results, including computed standard deviation values, p-values and signifi
 ! Tools:
 MySQL Workbench, SQL (STDDEV_SAMP), Python (PyCharm), scipy (binomtest), Claude AI (Standard deviation computation and binomial significance testing methodology were designed and implemented independently. Claude assisted with result formatting and README documentation.)
 
-Full SQL & Python pipeline: [`chessanalysisqueriesB`](./chessanalysisqueriesB)
+Full SQL & Python pipeline: [`chessanalysisqueriesB.sql`](./chessanalysisqueriesB.sql)
 
 
