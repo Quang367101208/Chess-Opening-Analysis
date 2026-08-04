@@ -1,0 +1,101 @@
+rating_bucket,opening_name,games_played,avg_scorepercent,score_stddev,p_value,significant
+800-1199,Scandinavian Defense,45,46.67%,0.49,0.766,No
+800-1199,Queen's Pawn Game: Chigorin Variation,21,40.48%,0.49,0.3833,No
+800-1199,King's Pawn Game: Wayward Queen Attack,26,38.46%,0.48,0.3269,No
+800-1199,Van't Kruijs Opening,53,18.87%,0.38,0.0,Yes
+1200-1599,French Defense: Advance Variation #3,20,75.0%,0.44,0.0414,Yes
+1200-1599,Bishop's Opening: Berlin Defense,34,73.53%,0.43,0.009,Yes
+1200-1599,French Defense: Normal Variation,44,70.45%,0.45,0.0096,Yes
+1200-1599,Center Game #2,22,63.64%,0.49,0.2863,No
+1200-1599,Pirc Defense #4,37,63.51%,0.47,0.1877,No
+1200-1599,Russian Game: Three Knights Game,30,63.33%,0.49,0.2005,No
+1200-1599,Horwitz Defense,58,62.93%,0.48,0.0869,No
+1200-1599,French Defense #2,36,62.5%,0.48,0.243,No
+1200-1599,Queen's Gambit Refused: Marshall Defense,29,62.07%,0.49,0.2649,No
+1200-1599,Owen Defense,39,61.54%,0.48,0.1996,No
+1200-1599,Four Knights Game: Italian Variation,60,60.83%,0.49,0.155,No
+1200-1599,Bishop's Opening,50,60.0%,0.48,0.2026,No
+1200-1599,King's Knight Opening,31,59.68%,0.49,0.281,No
+1200-1599,Philidor Defense #3,63,58.73%,0.49,0.2074,No
+1200-1599,King's Pawn Game: Damiano Defense,43,58.14%,0.49,0.3604,No
+1200-1599,Queen's Pawn,31,58.06%,0.48,0.4731,No
+1200-1599,Scandinavian Defense: Mieses-Kotroc Variation,87,58.05%,0.49,0.1329,No
+1200-1599,King's Knight Opening: Normal Variation,38,57.89%,0.49,0.4177,No
+1200-1599,English Opening: King's English Variation,31,56.45%,0.5,0.7201,No
+1200-1599,Philidor Defense,47,55.32%,0.48,0.5601,No
+1200-1599,Sicilian Defense: Smith-Morra Gambit #2,48,54.17%,0.48,0.6655,No
+1200-1599,Italian Game,36,54.17%,0.47,0.6177,No
+1200-1599,Scandinavian Defense: Main Line,25,54.0%,0.5,0.69,No
+1200-1599,Queen's Pawn Game: Mason Attack,65,53.85%,0.49,0.6201,No
+1200-1599,Three Knights Opening,30,53.33%,0.49,0.8555,No
+1200-1599,French Defense: Steinitz Attack,24,52.08%,0.48,1.0,No
+1200-1599,Russian Game: Urusov Gambit,24,52.08%,0.5,1.0,No
+1200-1599,French Defense: Knight Variation,96,51.56%,0.49,0.7596,No
+1200-1599,King's Pawn Game: Leonardis Variation,50,51.0%,0.5,0.8877,No
+1200-1599,Queen's Pawn Game #2,41,50.0%,0.5,1.0,No
+1200-1599,Queen's Gambit Declined,42,50.0%,0.51,1.0,No
+1200-1599,Italian Game: Two Knights Defense |  Knight Attack |  Normal Variation,20,50.0%,0.51,1.0,No
+1200-1599,King's Pawn Game: McConnell Defense,31,50.0%,0.5,1.0,No
+1200-1599,King's Pawn Game: Napoleon Attack,25,50.0%,0.5,1.0,No
+1200-1599,Sicilian Defense: Staunton-Cochrane Variation,22,50.0%,0.49,1.0,No
+1200-1599,Scotch Game,106,49.06%,0.49,0.9227,No
+1200-1599,Italian Game: Anti-Fried Liver Defense,66,48.48%,0.49,0.9022,No
+1200-1599,Philidor Defense #2,86,48.26%,0.49,0.7465,No
+1200-1599,Queen's Pawn Game: Zukertort Variation,23,47.83%,0.51,1.0,No
+1200-1599,Ruy Lopez: Exchange Variation,20,47.5%,0.5,1.0,No
+1200-1599,Hungarian Opening,46,46.74%,0.5,0.6587,No
+1200-1599,Caro-Kann Defense,65,45.38%,0.49,0.6201,No
+1200-1599,King's Pawn Game: Wayward Queen Attack,71,45.07%,0.49,0.4767,No
+1200-1599,Sicilian Defense: Bowdler Attack,110,45.0%,0.48,0.3909,No
+1200-1599,Sicilian Defense: Old Sicilian,52,43.27%,0.49,0.3317,No
+1200-1599,Sicilian Defense,121,42.98%,0.49,0.1455,No
+1200-1599,English Opening: The Whale,21,42.86%,0.51,0.6636,No
+1200-1599,Sicilian Defense: Closed Variation,20,42.5%,0.49,0.5034,No
+1200-1599,Queen's Pawn Game: Chigorin Variation,73,42.47%,0.49,0.2416,No
+1200-1599,Bird Opening,26,42.31%,0.5,0.5572,No
+1200-1599,Ruy Lopez: Steinitz Defense,39,42.31%,0.48,0.3368,No
+1200-1599,Modern Defense,48,41.67%,0.5,0.3123,No
+1200-1599,Ruy Lopez: Berlin Defense #2,30,41.67%,0.49,0.5847,No
+1200-1599,Indian Game,29,41.38%,0.5,0.4583,No
+1200-1599,Italian Game: Two Knights Defense |  Modern Bishop's Opening,21,40.48%,0.49,0.3833,No
+1200-1599,Scandinavian Defense,68,39.71%,0.49,0.1143,No
+1200-1599,Giuoco Piano,33,39.39%,0.5,0.2962,No
+1200-1599,Queen's Gambit Accepted: Old Variation,28,35.71%,0.47,0.1849,No
+1200-1599,Mieses Opening,33,34.85%,0.48,0.0801,No
+1200-1599,Sicilian Defense: Alapin Variation,23,34.78%,0.49,0.21,No
+1200-1599,Queen's Pawn Game,48,34.38%,0.46,0.0293,Yes
+1200-1599,Van't Kruijs Opening,105,34.29%,0.47,0.0017,Yes
+1600-1799,Scandinavian Defense: Mieses-Kotroc Variation,35,77.14%,0.43,0.0019,Yes
+1600-1799,Queen's Gambit Refused: Marshall Defense,31,72.58%,0.44,0.0107,Yes
+1600-1799,Philidor Defense #3,29,70.69%,0.45,0.0241,Yes
+1600-1799,Italian Game,20,70.0%,0.47,0.1153,No
+1600-1799,Pirc Defense #4,20,70.0%,0.44,0.1153,No
+1600-1799,Italian Game: Anti-Fried Liver Defense,34,69.12%,0.44,0.0243,Yes
+1600-1799,Queen's Gambit Accepted: Old Variation,37,68.92%,0.46,0.0201,Yes
+1600-1799,Queen's Pawn,22,68.18%,0.45,0.1338,No
+1600-1799,Scotch Game,27,66.67%,0.48,0.1221,No
+1600-1799,French Defense: Exchange Variation,29,62.07%,0.46,0.2649,No
+1600-1799,Caro-Kann Defense,37,60.81%,0.49,0.324,No
+1600-1799,French Defense: Normal Variation,20,60.0%,0.5,0.5034,No
+1600-1799,Queen's Pawn Game: Chigorin Variation,29,58.62%,0.5,0.4583,No
+1600-1799,Giuoco Piano,22,54.55%,0.51,0.8318,No
+1600-1799,Sicilian Defense,51,52.94%,0.49,0.7798,No
+1600-1799,King's Pawn Game: McConnell Defense,21,52.38%,0.51,1.0,No
+1600-1799,French Defense: Knight Variation,60,50.0%,0.49,1.0,No
+1600-1799,Horwitz Defense,32,50.0%,0.51,1.0,No
+1600-1799,Sicilian Defense: Old Sicilian,29,48.28%,0.51,1.0,No
+1600-1799,Owen Defense,20,42.5%,0.49,0.5034,No
+1600-1799,Van't Kruijs Opening,25,42.0%,0.49,0.4244,No
+1600-1799,Queen's Pawn Game: Mason Attack,30,38.33%,0.49,0.2005,No
+1600-1799,Sicilian Defense: Bowdler Attack,59,37.29%,0.48,0.0674,No
+1600-1799,Indian Game,29,34.48%,0.46,0.136,No
+1800-1999,Scandinavian Defense: Mieses-Kotroc Variation,21,71.43%,0.44,0.0784,No
+1800-1999,Modern Defense,23,69.57%,0.45,0.0931,No
+1800-1999,French Defense: Knight Variation,25,66.0%,0.47,0.2295,No
+1800-1999,Horwitz Defense,32,60.94%,0.49,0.2153,No
+1800-1999,Sicilian Defense,33,56.06%,0.5,0.4869,No
+1800-1999,French Defense: Exchange Variation,26,55.77%,0.48,0.845,No
+1800-1999,Queen's Pawn Game: Mason Attack,37,51.35%,0.51,1.0,No
+1800-1999,Indian Game,27,48.15%,0.49,1.0,No
+1800-1999,Sicilian Defense: Bowdler Attack,27,44.44%,0.51,0.7011,No
+1800-1999,Sicilian Defense: Old Sicilian,30,30.0%,0.45,0.0428,Yes
