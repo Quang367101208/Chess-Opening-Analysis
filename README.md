@@ -97,7 +97,7 @@ Some notable significant results include:
 - **Scandinavian Defense: Mieses-Kotroc Variation** was significant for White at 1600-1799 (77.14%, p = 0.0019), suggesting White holds a real advantage against this response at that rating level.
 - **Sicilian Defense: Old Sicilian** and **Sicilian Defense: Bowdler Attack** were significant for Black at 1800-1999 (74.19% and 73.53%, respectively), suggesting these lines perform reliably well for Black players at that level, not just by chance.
 
-Full results, including p-values and significance flags for every opening/bracket combination: 
+Full results, including computed standard deviation values, p-values and significance flags for every opening/bracket combination: [`white_significance_results_formatted.csv`](./white_significance_results_formatted.csv), [`black_significance_results_formatted.csv`](./black_significance_results_formatted.csv)
 
 ! Tools:
 MySQL Workbench, SQL (STDDEV_SAMP), Python (PyCharm), scipy (binomtest), Claude AI (Standard deviation computation and binomial significance testing methodology were designed and implemented independently. Claude assisted with result formatting and README documentation.)
