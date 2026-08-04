@@ -60,4 +60,42 @@ The queries are explained in this file: https://docs.google.com/document/d/1FNSd
 **B.** Further analysis.
 
 ! Overview
-This part addresses some of the limitations in part A by computing the standard deviation value & running the binomial test. 
+This part addresses some of the limitations in part A by computing the standard deviation values and running the binomial significance test.
+
+## Standard Deviation
+For each opening/bracket combination, the sample standard deviation of the score (`won`, valued 1, 0.5, or 0) was computed directly in SQL using `STDDEV_SAMP()`, alongside the existing average, to get a sense of how much individual games vary around that average before testing significance.
+
+**Result:** 
+- Across every opening (White and Black combined), standard deviation values fall between roughly 0.40 and 0.51 — close to the maximum possible spread for a variable that only takes values of 0, 0.5, or 1. This means individual games are close to unpredictable.
+- This high per-game variability is exactly why a small-sample average can't be trusted at face value — a 75% score over 20 games could easily be the product of this underlying randomness rather than a real advantage. This motivates the binomial significance test below, which formally checks whether each opening's *average* score across all its games is still far enough from a 50/50 baseline to be unlikely by chance, despite the noise at the individual-game level.
+- Full results in ## Binomial Test Results section.
+
+## Binomial Test
+To test whether each opening's average score is meaningfully different from a 50/50 baseline, a binomial test was run on every opening/bracket row using Python's `scipy.stats.binomtest`. The null hypothesis for each test: the opening has no real advantage (a true win rate of 50%), and any observed deviation is due to random chance given the sample size.
+
+**Setup:**
+- `white_winrate_v2` and `black_winrate_v2` were exported from MySQL Workbench to CSV.
+- `scipy` was installed into the project's virtual environment (`pip install scipy`, run via PyCharm's interpreter settings).
+- Each CSV was read using Python's built-in `csv.DictReader`, which parses each row into a dictionary keyed by column name.
+
+**For each opening/bracket row:**
+1. The average score percentage and game count were converted from text to numerical values.
+2. An approximate "win-equivalent" count was reconstructed as `avg_score / 100 × games_played`.
+3. `scipy.stats.binomtest(wins_equivalent, games_played, 0.5)` was run to compute a p-value.
+4. Results with p < 0.05 were flagged as statistically significant — meaning the observed score is unlikely to have occurred by chance if the opening were truly a 50/50 proposition.
+
+**A known limitation of this approach:** because games can end in a draw (score 0.5), the "win-equivalent" count used in the binomial test is an approximation, not an exact win/loss tally — the binomial test technically assumes a clean binary outcomeper trial. This is a simplification worth noting. Because draws (score 0.5) pull outcomes toward the middle rather than the extremes, this approximation likely makes the test slightly conservative — it may under-detect real patterns (undercounts) rather than produce false positives (overcounts).
+
+### Results
+
+Of the 100 White opening/bracket combinations meeting the 20-game sample threshold, 12 (12.0%) showed a statistically significant deviation from a 50% baseline (p < 0.05). For Black, 13 of 96 (13.5%) were significant. 
+The remaining results — while still the highest-scoring within their bracket in some cases — should be interpreted with caution, as their sample size is not large enough to rule out random variation.
+
+Some notable significant results include:
+
+- **Van't Kruijs Opening** was significant for both colors in multiple brackets, and in opposite directions — Black scores well against it (70.95% at 1200-1599, p < 0.0001), while White scores poorly with it (34.29% at 1200-1599, 18.87% at 800-1199), consistent with it being an objectively weak opening choice for White.
+- **Scandinavian Defense: Mieses-Kotroc Variation** was significant for White at 1600-1799 (77.14%, p = 0.0019), suggesting White holds a real advantage against this response at that rating level.
+- **Sicilian Defense: Old Sicilian** and **Sicilian Defense: Bowdler Attack** were significant for Black at 1800-1999 (74.19% and 73.53%, respectively), suggesting these lines perform reliably well for Black players at that level, not just by chance.
+
+Full results, including p-values and significance flags for every opening/bracket combination: 
+
