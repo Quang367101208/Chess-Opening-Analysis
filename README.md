@@ -11,6 +11,7 @@ This project answers the question: which chess opening performs best at a given 
 **A.** Initial data screening & analysis
 
 ! Overview
+
 In this first part, data was downloaded from kaggle, cleansed before having the average win rates computed.
 
 ! Data Source
@@ -58,6 +59,7 @@ MySQL Workbench, SQL (CASE expressions, aggregate functions, GROUP BY/HAVING), C
 **B.** Further analysis.
 
 ! Overview
+
 This part addresses some of the limitations in part A by computing the standard deviation values and running the binomial significance test.
 
 ### Standard Deviation
@@ -98,6 +100,7 @@ Some notable significant results include:
 Full results, including computed standard deviation values, p-values and significance flags for every opening/bracket combination: [`white_significance_results_formatted.csv`](./white_significance_results_formatted.csv), [`black_significance_results_formatted.csv`](./black_significance_results_formatted.csv)
 
 ! Tools:
+
 MySQL Workbench, SQL (STDDEV_SAMP), Python (PyCharm), scipy (binomtest), Claude AI (Standard deviation computation and binomial significance testing methodology were designed and implemented independently. Claude assisted with result formatting and README documentation.)
 
 Full SQL & Python pipeline: [`chessanalysisqueriesB.sql`](./chessanalysisqueriesB.sql)
