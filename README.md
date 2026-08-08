@@ -9,6 +9,7 @@ SQL data analysis of ~20,000 rated Lichess games to identify the highest-perform
 This project answers the question: which chess opening performs best at a given rating level? Using a public dataset of Lichess games, the data was cleaned, filtered, and aggregated in MySQL to calculate each opening's average performance score across five rating brackets, separately for White and Black.
 
 **A.** Initial data screening & analysis
+
 ! Overview
 In this first part, data was downloaded from kaggle, cleansed before having the average win rates computed.
 
